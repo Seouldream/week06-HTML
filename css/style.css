@@ -52,7 +52,7 @@ article {
     min-width: max-content;;
 }
 
-.mainImage {
+.mainImage {                                                                                                                          
     display: block;
     position: absolute;
     top: 30vh;
@@ -65,4 +65,3 @@ article {
     min-width: 100%;
     z-index: -1;
 }
-
