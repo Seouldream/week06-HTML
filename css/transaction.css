@@ -1,0 +1,72 @@
+main { 
+    display: grid;
+    padding: 0 6vw;
+    grid-template-rows: 10% repeat(8, 1fr) 10%; 
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Roboto;
+    height: 100vh;
+    background-image: url("../image/wave.svg");
+    background-color: rgb(15,117,98);
+    
+ }
+
+ 
+ .white_box {
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-row: 2 / 10;
+    grid-column: 2 / 3;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(6,1fr) 40px ;
+    z-index: 1;
+    min-width: max-content;
+ }
+
+ .title {
+    display: grid;
+    grid-row: 1 / 2;
+    align-self: center;
+    font-size: 35px;
+    min-width: max-content;
+ }
+
+ .account_list {
+    grid-row: 2 / 4;
+    align-self: start;
+    font-size: 20px;
+    
+ }
+
+p {
+    padding: 5px;
+}
+
+.man_image {
+    position: absolute;
+    top: 30vh;
+    bottom: 0vh;
+    left: 11vw;
+    right:0vw;
+    background-image: url("../image/man.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+    min-height: 50%;
+    min-width: 100%;
+}
+
+.woman_image {
+    position: absolute;
+    top: 30vh;
+    bottom: 0vh;
+    left:65vw;
+    right:0vw;
+    background-image: url("../image/woman.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+    min-height: 50%;
+    min-width: 100%;
+}
