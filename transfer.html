@@ -2,36 +2,51 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title>마카오 뱅크 송금</title>
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/transfer.css" />
+        <title>마카오 뱅크</title>
     </head>
     <body>
+
         <!---Header-->
         <header>
-            <nav>
+            <nav class="menu_bar">
                 <div class="button">
-                    <ul>
-                        <li><button><img src="image/logo.png" alt=""></button>
-                        </li>
-                        <li>홈</li>
-                        <li>잔액조회</li>
-                        <li>송금</li>
-                        <li>거래내역</li>
+                    <ul class="menu">
+                        <li class="logo"><a href="http://127.0.0.1:5500/makao-bank.html"><img class="logo_image" src="image/logo.png" alt="">
+                        </a></li>
+                        <li><a href="http://127.0.0.1:5500/makao-bank.html">홈</a></li>
+                        <li><a href="http://127.0.0.1:5500/account.html">잔액조회</a></li>
+                        <li><a href="http://127.0.0.1:5500/transfer.html">송금</a></li>
+                        <li><a href="http://127.0.0.1:5500/transaction.html">거래내역</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <!-----Header-->
-        <div class="title">송금</div>
-        <ul>
-        <li class="account">잔액: 10,000원</li>
-        <li class="account">보낼 계좌</li>
-        <li class="account"><input type="text" id="account" required
-            minlength="4" maxlength="8" size="10"></li>
-        <li class="account">보낼 금액</li>
-        <li class="account"><input type="text" id="account" required
-            minlength="4" maxlength="8" size="10"></li>    
-        <li class="account"><input type="submit" id="account" required></li>    
-        </ul>
+      <main>
+      <div class="white_box">       
+            <div class="title"><strong>송금</strong></div>
+            <div class="transfer_list">
+            <p>잔액: 10,000원</p>
+            <form>
+                
+                <label for="to">보낼 계좌</label>
+                <input type="text" id="to" required
+                minlength="4" maxlength="8" size="10">
+                <label for="amount">보낼 금액</label>
+                <input type="number" id="amount" required
+                minlength="4" maxlength="8" size="10">
+                <div class="submit-container">   
+                <button class="submit" type="submit">확인</button>
+                </div>
+            </form>
+            </div>
+      </div>    
+        <div class="man_image"></div>
+        <div class="woman_image"></div>
+    </main>
+  
     </body>
 </html>
 
